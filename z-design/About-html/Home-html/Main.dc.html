@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home — DPT to USA Consultation</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&amp;display=swap">
+<style>
+body{margin:0;font-family:'DM Sans',system-ui,sans-serif;color:#0B2530;background:#F7F4EE;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:500;letter-spacing:-0.02em;margin:0}
+p{margin:0}
+a{color:#0E5E57;text-decoration:none}a:hover{color:#0B2530}
+input,select{font-family:'DM Sans',system-ui,sans-serif}
+</style>
+</helmet>
+<div style="width: 100%; background: #F7F4EE; color: #0B2530; display: flex; flex-direction: column">
+
+<!-- ============ NAV ============ -->
+<header style="width: 100%; border-bottom: 1px solid #E4DED3; background: #F7F4EE">
+<div style="max-width: 1240px; margin: 0 auto; padding: 22px 40px; display: flex; align-items: center; justify-content: space-between; gap: 32px">
+<a href="#top" style="display: flex; align-items: center; gap: 12px; color: #0B2530">
+<div style="width: 44px; height: 44px; border-radius: 50%; background: #0B3B3C; color: #F7F4EE; display: flex; align-items: center; justify-content: center; font-family: 'Fraunces', serif; font-size: 18px; font-weight: 600">Dr</div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-family: 'Fraunces', serif; font-size: 19px; font-weight: 600">Dr. [Full Name], DPT</span>
+<span style="font-size: 12px; color: #52676C; letter-spacing: 0.06em; text-transform: uppercase">US Physical Therapy Pathway</span>
+</div>
+</a>
+<nav style="display: flex; align-items: center; gap: 34px; font-size: 15px; font-weight: 500">
+<a href="Pathway.dc.html" style="color: #0B2530">The Pathway</a>
+<a href="#how" style="color: #0B2530">How It Works</a>
+<a href="Services.dc.html" style="color: #0B2530">Services</a>
+<a href="About.dc.html" style="color: #0B2530">About</a>
+<a href="FAQ.dc.html" style="color: #0B2530">FAQ</a>
+<a href="Contact.dc.html" style="color: #0B2530">Contact</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 12px">
+<a href="#watch" style="padding: 12px 18px; border-radius: 999px; border: 1px solid #0B3B3C; color: #0B3B3C; font-size: 15px; font-weight: 600">Watch intro</a>
+<a href="Eligibility.dc.html" style="padding: 13px 22px; border-radius: 999px; background: #0B3B3C; color: #FFFFFF; font-size: 15px; font-weight: 600">Check eligibility</a>
+</div>
+</div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" style="width: 100%">
+<div style="max-width: 1240px; margin: 0 auto; padding: 80px 40px 96px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 64px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 30px">
+<div style="display: flex; align-items: center; gap: 10px; align-self: flex-start; padding: 8px 14px 8px 8px; border-radius: 999px; background: #E3EFEB; color: #0E5E57; font-size: 14px; font-weight: 600">
+<span style="padding: 4px 10px; border-radius: 999px; background: #0E5E57; color: #FFFFFF; font-size: 12px">For DPT graduates in Pakistan</span>
+<span>Guided by a US-licensed physical therapist</span>
+</div>
+<h1 style="font-size: 76px; line-height: 1.02; color: #0B2530">From a DPT in Pakistan to a <span style="font-style: italic; color: #B8532A">licensed PT</span> in the USA.</h1>
+<p style="font-size: 20px; line-height: 1.6; color: #3F5559; max-width: 560px">I made this move myself. Now I help Pakistani DPT graduates understand every step — credentialing, the NPTE, licensure and visas — with an honest plan built around your profile.</p>
+<div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap">
+<a href="#eligibility" style="display: flex; align-items: center; gap: 10px; padding: 18px 28px; border-radius: 999px; background: {{accent}}; color: #0B2530; font-size: 17px; font-weight: 700">Check my eligibility
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
+</a>
+<a href="#watch" style="display: flex; align-items: center; gap: 12px; padding: 10px 20px 10px 10px; border-radius: 999px; color: #0B2530; font-size: 16px; font-weight: 600">
+<span style="width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid #0B2530; display: flex; align-items: center; justify-content: center">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="#0B2530"><path d="M8 5v14l11-7z"></path></svg>
+</span>Watch the 2-minute intro</a>
+</div>
+<div style="display: flex; align-items: center; gap: 28px; padding-top: 14px; border-top: 1px solid #E4DED3">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Fraunces', serif; font-size: 30px; font-weight: 500">[120+]</span>
+<span style="font-size: 14px; color: #52676C">students guided</span>
+</div>
+<div style="width: 1px; height: 44px; background: #E4DED3"></div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Fraunces', serif; font-size: 30px; font-weight: 500">[8 yrs]</span>
+<span style="font-size: 14px; color: #52676C">practising in the US</span>
+</div>
+<div style="width: 1px; height: 44px; background: #E4DED3"></div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Fraunces', serif; font-size: 30px; font-weight: 500">1:1</span>
+<span style="font-size: 14px; color: #52676C">personal guidance</span>
+</div>
+</div>
+</div>
+
+<!-- hero visual -->
+<div style="position: relative; height: 620px">
+<div style="position: absolute; left: 40px; right: 0; top: 0; bottom: 40px; border-radius: 28px; background: #0B3B3C; overflow: hidden">
+<svg width="100%" height="100%" viewBox="0 0 480 580" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; opacity: 0.18">
+<circle cx="380" cy="120" r="170" fill="none" stroke="#9FD3C7" stroke-width="1"></circle>
+<circle cx="380" cy="120" r="230" fill="none" stroke="#9FD3C7" stroke-width="1"></circle>
+<circle cx="380" cy="120" r="290" fill="none" stroke="#9FD3C7" stroke-width="1"></circle>
+</svg>
+<div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; color: #9FD3C7">
+<svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"></path></svg>
+<span style="font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase">[Professional portrait — clinic setting]</span>
+</div>
+</div>
+<!-- journey card -->
+<div style="position: absolute; left: 0; bottom: 0; width: 300px; padding: 22px; border-radius: 20px; background: #FFFFFF; box-shadow: 0 24px 60px rgba(11,37,48,0.16); display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #52676C">Your journey</span>
+<div style="display: flex; align-items: center; gap: 10px">
+<span style="font-family: 'Fraunces', serif; font-size: 22px">Pakistan</span>
+<svg width="70" height="16" viewBox="0 0 70 16" fill="none"><path d="M2 12 C 20 -2, 50 -2, 68 12" stroke="#B8532A" stroke-width="1.6" stroke-dasharray="3 4" fill="none"></path><circle cx="68" cy="12" r="3" fill="#B8532A"></circle></svg>
+<span style="font-family: 'Fraunces', serif; font-size: 22px">USA</span>
+</div>
+<div style="height: 8px; border-radius: 99px; background: #EEE9DF; overflow: hidden"><div style="width: 58%; height: 100%; background: #0E5E57; border-radius: 99px"></div></div>
+<div style="display: flex; justify-content: space-between; font-size: 13px; color: #52676C"><span>Step 3 of 6 · NPTE prep</span><span style="color: #0E5E57; font-weight: 600">On track</span></div>
+</div>
+<!-- credential chip -->
+<div style="position: absolute; right: -12px; top: 36px; padding: 14px 18px; border-radius: 16px; background: #FFFFFF; box-shadow: 0 18px 40px rgba(11,37,48,0.14); display: flex; align-items: center; gap: 12px">
+<div style="width: 40px; height: 40px; border-radius: 12px; background: #E3EFEB; color: #0E5E57; display: flex; align-items: center; justify-content: center">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 15px; font-weight: 700">PT, DPT · Licensed in [State]</span>
+<span style="font-size: 13px; color: #52676C">Trained in Pakistan, practising in the US</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section style="width: 100%; background: #0B3B3C; color: #E6F1EE">
+<div style="max-width: 1240px; margin: 0 auto; padding: 30px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; font-size: 15px">
+<span style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #9FD3C7">Guidance covers</span>
+<span style="font-family: 'Fraunces', serif; font-size: 20px">FCCPT credentialing</span>
+<span style="color: #4E7D78">•</span>
+<span style="font-family: 'Fraunces', serif; font-size: 20px">TOEFL planning</span>
+<span style="color: #4E7D78">•</span>
+<span style="font-family: 'Fraunces', serif; font-size: 20px">NPTE strategy</span>
+<span style="color: #4E7D78">•</span>
+<span style="font-family: 'Fraunces', serif; font-size: 20px">State licensure</span>
+<span style="color: #4E7D78">•</span>
+<span style="font-family: 'Fraunces', serif; font-size: 20px">VisaScreen &amp; visas</span>
+</div>
+</section>
+
+<!-- ============ INTRO VIDEO ============ -->
+<section id="watch" style="width: 100%">
+<div style="max-width: 1240px; margin: 0 auto; padding: 120px 40px; display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 72px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 22px">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #B8532A">Start here</span>
+<h2 style="font-size: 52px; line-height: 1.08">Watch this before you apply.</h2>
+<p style="font-size: 18px; line-height: 1.65; color: #3F5559">A short, honest introduction to what the path really looks like — and how I work with students.</p>
+<div style="display: flex; flex-direction: column; gap: 14px; padding-top: 6px">
+<div style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.5">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E5E57" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 1px"><path d="M20 6L9 17l-5-5"></path></svg>
+<span>Realistic timelines and total costs, start to finish</span>
+</div>
+<div style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.5">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E5E57" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 1px"><path d="M20 6L9 17l-5-5"></path></svg>
+<span>The mistakes that cost graduates months (or years)</span>
+</div>
+<div style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.5">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E5E57" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 1px"><path d="M20 6L9 17l-5-5"></path></svg>
+<span>Who this consultation is — and isn’t — right for</span>
+</div>
+</div>
+</div>
+<div style="position: relative; aspect-ratio: 16 / 10; border-radius: 28px; background: #16302F; overflow: hidden; display: flex; align-items: center; justify-content: center">
+<span style="position: absolute; left: 28px; top: 24px; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #9FD3C7">[Intro video thumbnail]</span>
+<button aria-label="Play intro video" style="width: 96px; height: 96px; border-radius: 50%; border: none; background: #F7F4EE; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 16px rgba(247,244,238,0.14); cursor: pointer">
+<svg width="30" height="30" viewBox="0 0 24 24" fill="#0B3B3C"><path d="M8 5v14l11-7z"></path></svg>
+</button>
+<div style="position: absolute; left: 28px; right: 28px; bottom: 24px; display: flex; justify-content: space-between; align-items: flex-end; color: #F7F4EE">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Fraunces', serif; font-size: 24px">“Is the US path right for you?”</span>
+<span style="font-size: 14px; color: #B9D6CF">Dr. [Name] · 2 min</span>
+</div>
+<span style="padding: 6px 12px; border-radius: 999px; background: rgba(247,244,238,0.16); font-size: 13px">English / Urdu</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ THE PATHWAY ============ -->
+<section id="pathway" style="width: 100%; background: #EFEAE0">
+<div style="max-width: 1240px; margin: 0 auto; padding: 120px 40px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 18px; max-width: 640px">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #B8532A">The pathway</span>
+<h2 style="font-size: 52px; line-height: 1.08">Six steps between you and a US licence — mapped clearly.</h2>
+</div>
+<p style="font-size: 17px; line-height: 1.6; color: #3F5559; max-width: 380px">Most graduates don’t fail for lack of talent. They get lost in the order, the paperwork and the deadlines. This is the route, in plain language.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px">
+<div style="padding: 32px; border-radius: 22px; background: #FFFFFF; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-family: 'Fraunces', serif; font-size: 40px; color: #0E5E57">01</span><span style="padding: 6px 12px; border-radius: 999px; background: #E3EFEB; color: #0E5E57; font-size: 13px; font-weight: 600">Documents</span></div>
+<h3 style="font-size: 26px">Credential evaluation</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #3F5559">Your DPT coursework is reviewed against US standards by an approved agency such as FCCPT. We prepare your file so gaps don’t surprise you.</p>
+</div>
+<div style="padding: 32px; border-radius: 22px; background: #FFFFFF; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-family: 'Fraunces', serif; font-size: 40px; color: #0E5E57">02</span><span style="padding: 6px 12px; border-radius: 999px; background: #E3EFEB; color: #0E5E57; font-size: 13px; font-weight: 600">English</span></div>
+<h3 style="font-size: 26px">TOEFL iBT</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #3F5559">Most states and credentialing bodies need TOEFL scores. We set your target by section and a timeline that fits your exam plan.</p>
+</div>
+<div style="padding: 32px; border-radius: 22px; background: #FFFFFF; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-family: 'Fraunces', serif; font-size: 40px; color: #0E5E57">03</span><span style="padding: 6px 12px; border-radius: 999px; background: #E3EFEB; color: #0E5E57; font-size: 13px; font-weight: 600">Exam</span></div>
+<h3 style="font-size: 26px">The NPTE</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #3F5559">The National Physical Therapy Exam by FSBPT. We build a study strategy, pick the right prep resources and time your attempt.</p>
+</div>
+<div style="padding: 32px; border-radius: 22px; background: #FFFFFF; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-family: 'Fraunces', serif; font-size: 40px; color: #0E5E57">04</span><span style="padding: 6px 12px; border-radius: 999px; background: #E3EFEB; color: #0E5E57; font-size: 13px; font-weight: 600">Licence</span></div>
+<h3 style="font-size: 26px">State licensure</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #3F5559">Every state board has its own rules and jurisprudence exam. Choosing the right state first can save you months.</p>
+</div>
+<div style="padding: 32px; border-radius: 22px; background: #FFFFFF; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-family: 'Fraunces', serif; font-size: 40px; color: #0E5E57">05</span><span style="padding: 6px 12px; border-radius: 999px; background: #E3EFEB; color: #0E5E57; font-size: 13px; font-weight: 600">Immigration</span></div>
+<h3 style="font-size: 26px">VisaScreen &amp; visa route</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #3F5559">The Healthcare Worker Certificate, then the visa route that fits you — such as H-1B or an employment-based green card.</p>
+</div>
+<div style="padding: 32px; border-radius: 22px; background: #0B3B3C; color: #F7F4EE; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center"><span style="font-family: 'Fraunces', serif; font-size: 40px; color: {{accent}}">06</span><span style="padding: 6px 12px; border-radius: 999px; background: rgba(247,244,238,0.14); font-size: 13px; font-weight: 600">Arrival</span></div>
+<h3 style="font-size: 26px">Job offer &amp; relocation</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #C9DED9">Finding sponsoring employers, interviewing well, and landing ready to practise — from someone who has done it.</p>
+</div>
+</div>
+<p style="font-size: 14px; color: #52676C">Requirements change and vary by state. All guidance is checked against current FSBPT, FCCPT and state board sources.</p>
+</div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section id="how" style="width: 100%">
+<div style="max-width: 1240px; margin: 0 auto; padding: 120px 40px; display: flex; flex-direction: column; gap: 64px">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 18px; text-align: center">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #B8532A">How it works</span>
+<h2 style="font-size: 52px; line-height: 1.08; max-width: 760px">No pressure. Full transparency. You decide when you’re ready.</h2>
+</div>
+<div style="position: relative; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px">
+<div style="position: absolute; left: 10%; right: 10%; top: 35px; border-top: 2px dashed #CFC6B6"></div>
+<div style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center">
+<div style="width: 72px; height: 72px; border-radius: 50%; background: #0B3B3C; color: #F7F4EE; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 8px #F7F4EE">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"></rect><path d="M9 8h6M9 12h6M9 16h3"></path></svg>
+</div>
+<span style="font-size: 13px; font-weight: 700; color: #0E5E57">STEP 1</span>
+<h3 style="font-size: 22px">Check eligibility</h3>
+<p style="font-size: 15px; line-height: 1.55; color: #3F5559">Answer a few questions about your degree, graduation year and exam status. Takes 3 minutes.</p>
+</div>
+<div style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center">
+<div style="width: 72px; height: 72px; border-radius: 50%; background: #0B3B3C; color: #F7F4EE; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 8px #F7F4EE">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
+</div>
+<span style="font-size: 13px; font-weight: 700; color: #0E5E57">STEP 2</span>
+<h3 style="font-size: 22px">Get the full video</h3>
+<p style="font-size: 15px; line-height: 1.55; color: #3F5559">If you qualify, we email you a detailed recorded walkthrough of the process and the services.</p>
+</div>
+<div style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center">
+<div style="width: 72px; height: 72px; border-radius: 50%; background: #0B3B3C; color: #F7F4EE; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 8px #F7F4EE">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"></path></svg>
+</div>
+<span style="font-size: 13px; font-weight: 700; color: #0E5E57">STEP 3</span>
+<h3 style="font-size: 22px">Choose a service</h3>
+<p style="font-size: 15px; line-height: 1.55; color: #3F5559">Take your time. When you’re convinced, pick the plan that matches where you are.</p>
+</div>
+<div style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center">
+<div style="width: 72px; height: 72px; border-radius: 50%; background: #0B3B3C; color: #F7F4EE; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 8px #F7F4EE">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"></path><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8"></path><path d="M3 20h18"></path></svg>
+</div>
+<span style="font-size: 13px; font-weight: 700; color: #0E5E57">STEP 4</span>
+<h3 style="font-size: 22px">Pay by bank transfer</h3>
+<p style="font-size: 15px; line-height: 1.55; color: #3F5559">Transfer to our local account and upload your receipt at checkout. No card needed.</p>
+</div>
+<div style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center">
+<div style="width: 72px; height: 72px; border-radius: 50%; background: {{accent}}; color: #0B2530; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 8px #F7F4EE">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>
+</div>
+<span style="font-size: 13px; font-weight: 700; color: #0E5E57">STEP 5</span>
+<h3 style="font-size: 22px">We confirm &amp; begin</h3>
+<p style="font-size: 15px; line-height: 1.55; color: #3F5559">We verify your payment within [24 hours] and schedule your first session.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ WHO IT'S FOR ============ -->
+<section style="width: 100%">
+<div style="max-width: 1240px; margin: 0 auto; padding: 0 40px 120px">
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px">
+<div style="padding: 48px; border-radius: 28px; background: #E3EFEB; display: flex; flex-direction: column; gap: 24px">
+<h3 style="font-size: 32px">This is for you if…</h3>
+<div style="display: flex; flex-direction: column; gap: 16px; font-size: 17px; line-height: 1.5">
+<div style="display: flex; gap: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E5E57" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px"><path d="M20 6L9 17l-5-5"></path></svg><span>You hold (or are finishing) a DPT from an HEC-recognised university</span></div>
+<div style="display: flex; gap: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E5E57" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px"><path d="M20 6L9 17l-5-5"></path></svg><span>You’re serious about a US career and can commit 12–24 months</span></div>
+<div style="display: flex; gap: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E5E57" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px"><path d="M20 6L9 17l-5-5"></path></svg><span>You want a clear plan instead of scattered advice from groups and forums</span></div>
+</div>
+</div>
+<div style="padding: 48px; border-radius: 28px; background: #FFFFFF; border: 1px solid #E4DED3; display: flex; flex-direction: column; gap: 24px">
+<h3 style="font-size: 32px">It’s not for you if…</h3>
+<div style="display: flex; flex-direction: column; gap: 16px; font-size: 17px; line-height: 1.5; color: #3F5559">
+<div style="display: flex; gap: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9A4422" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px"><path d="M18 6L6 18M6 6l12 12"></path></svg><span>You’re looking for a shortcut or a guaranteed visa — no honest adviser can promise one</span></div>
+<div style="display: flex; gap: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9A4422" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px"><path d="M18 6L6 18M6 6l12 12"></path></svg><span>You want someone else to do the studying and exams for you</span></div>
+<div style="display: flex; gap: 12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9A4422" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px"><path d="M18 6L6 18M6 6l12 12"></path></svg><span>You aren’t yet sure the US is where you want to build your life</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" style="width: 100%; background: #0B3B3C; color: #F7F4EE">
+<div style="max-width: 1240px; margin: 0 auto; padding: 120px 40px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 18px; max-width: 620px">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: {{accent}}">Services</span>
+<h2 style="font-size: 52px; line-height: 1.08">Support for exactly where you are.</h2>
+</div>
+<a href="Services.dc.html" style="display: flex; align-items: center; gap: 8px; color: #F7F4EE; font-size: 16px; font-weight: 600; border-bottom: 1px solid #F7F4EE; padding-bottom: 4px">Compare all services
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; align-items: stretch">
+<div style="padding: 36px; border-radius: 24px; background: #12494A; display: flex; flex-direction: column; gap: 22px">
+<span style="font-size: 14px; color: #9FD3C7; font-weight: 600">Starting out</span>
+<h3 style="font-size: 30px">Roadmap Session</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #C9DED9">A 1:1 call to assess your profile and leave with a written, personalised step-by-step plan.</p>
+<div style="display: flex; flex-direction: column; gap: 12px; font-size: 15px; color: #E6F1EE">
+<span>✓ 60-minute video call</span><span>✓ Personal roadmap document</span><span>✓ State shortlist</span>
+</div>
+<div style="margin-top: auto; display: flex; align-items: baseline; gap: 8px"><span style="font-family: 'Fraunces', serif; font-size: 38px">PKR [—]</span></div>
+<a href="Services.dc.html" style="padding: 15px; border-radius: 999px; border: 1px solid #9FD3C7; color: #F7F4EE; font-size: 16px; font-weight: 600; text-align: center">View details</a>
+</div>
+<div style="position: relative; padding: 36px; border-radius: 24px; background: #F7F4EE; color: #0B2530; display: flex; flex-direction: column; gap: 22px">
+<span style="position: absolute; top: 24px; right: 24px; padding: 6px 12px; border-radius: 999px; background: {{accent}}; color: #0B2530; font-size: 12px; font-weight: 700; letter-spacing: 0.04em">MOST CHOSEN</span>
+<span style="font-size: 14px; color: #0E5E57; font-weight: 600">Credentialing &amp; exams</span>
+<h3 style="font-size: 30px">Pathway Mentorship</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #3F5559">Guided support through FCCPT evaluation, TOEFL and NPTE preparation, with regular check-ins.</p>
+<div style="display: flex; flex-direction: column; gap: 12px; font-size: 15px">
+<span>✓ Everything in Roadmap</span><span>✓ Document review &amp; submissions</span><span>✓ NPTE study plan &amp; check-ins</span>
+</div>
+<div style="margin-top: auto; display: flex; align-items: baseline; gap: 8px"><span style="font-family: 'Fraunces', serif; font-size: 38px">PKR [—]</span></div>
+<a href="Services.dc.html" style="padding: 15px; border-radius: 999px; background: #0B3B3C; color: #FFFFFF; font-size: 16px; font-weight: 600; text-align: center">View details</a>
+</div>
+<div style="padding: 36px; border-radius: 24px; background: #12494A; display: flex; flex-direction: column; gap: 22px">
+<span style="font-size: 14px; color: #9FD3C7; font-weight: 600">Start to finish</span>
+<h3 style="font-size: 30px">Complete Journey</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #C9DED9">End-to-end guidance from evaluation to licensure, visa process, job search and relocation.</p>
+<div style="display: flex; flex-direction: column; gap: 12px; font-size: 15px; color: #E6F1EE">
+<span>✓ Everything in Mentorship</span><span>✓ Licensure &amp; visa guidance</span><span>✓ CV, interviews &amp; employers</span>
+</div>
+<div style="margin-top: auto; display: flex; align-items: baseline; gap: 8px"><span style="font-family: 'Fraunces', serif; font-size: 38px">PKR [—]</span></div>
+<a href="Services.dc.html" style="padding: 15px; border-radius: 999px; border: 1px solid #9FD3C7; color: #F7F4EE; font-size: 16px; font-weight: 600; text-align: center">View details</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" style="width: 100%">
+<div style="max-width: 1240px; margin: 0 auto; padding: 120px 40px; display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 80px; align-items: center">
+<div style="position: relative; height: 560px; border-radius: 28px; background: #E9E2D5; display: flex; align-items: center; justify-content: center; color: #7A8B8E">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 10px">
+<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><path d="M21 16l-5-5-9 8"></path></svg>
+<span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase">[Candid photo — at work in the US]</span>
+</div>
+<div style="position: absolute; right: -28px; bottom: 40px; padding: 20px 24px; border-radius: 18px; background: #0B3B3C; color: #F7F4EE; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Fraunces', serif; font-size: 22px; font-style: italic">[University], Pakistan</span>
+<span style="font-size: 14px; color: #B9D6CF">DPT, class of [Year]</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 24px">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #B8532A">About Dr. [Name]</span>
+<h2 style="font-size: 52px; line-height: 1.08">I stood exactly where you’re standing.</h2>
+<p style="font-size: 18px; line-height: 1.7; color: #3F5559">[Short personal story: graduating in Pakistan, the confusion of figuring out the US process alone, the setbacks, and passing the NPTE.]</p>
+<p style="font-size: 18px; line-height: 1.7; color: #3F5559">[Today: practising as a licensed physical therapist in [State], and why he started guiding Pakistani graduates.]</p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding-top: 8px">
+<div style="padding: 20px; border-radius: 16px; border: 1px solid #E4DED3; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; color: #52676C">Degree</span><span style="font-size: 16px; font-weight: 600">DPT, [University]</span></div>
+<div style="padding: 20px; border-radius: 16px; border: 1px solid #E4DED3; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; color: #52676C">Licensed in</span><span style="font-size: 16px; font-weight: 600">[State(s)]</span></div>
+<div style="padding: 20px; border-radius: 16px; border: 1px solid #E4DED3; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; color: #52676C">Specialty</span><span style="font-size: 16px; font-weight: 600">[e.g. Orthopaedics]</span></div>
+</div>
+<a href="About.dc.html" style="align-self: flex-start; display: flex; align-items: center; gap: 8px; font-size: 16px; font-weight: 600; color: #0E5E57; border-bottom: 1px solid #0E5E57; padding-bottom: 4px">Read my full story
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</section>
+
+<!-- ============ STORIES ============ -->
+<section style="width: 100%; background: #EFEAE0">
+<div style="max-width: 1240px; margin: 0 auto; padding: 120px 40px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 18px; max-width: 640px">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #B8532A">Student stories</span>
+<h2 style="font-size: 52px; line-height: 1.08">From confused to cleared.</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px">
+<div style="padding: 32px; border-radius: 22px; background: #FFFFFF; display: flex; flex-direction: column; gap: 24px">
+<span style="align-self: flex-start; padding: 6px 12px; border-radius: 999px; background: #E3EFEB; color: #0E5E57; font-size: 13px; font-weight: 600">Passed NPTE</span>
+<p style="font-family: 'Fraunces', serif; font-size: 21px; line-height: 1.45">“[Real student quote about the experience — added once permission is given.]”</p>
+<div style="margin-top: auto; display: flex; align-items: center; gap: 12px"><div style="width: 44px; height: 44px; border-radius: 50%; background: #E9E2D5"></div><div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 600">[Student name]</span><span style="font-size: 13px; color: #52676C">DPT [University], [Year]</span></div></div>
+</div>
+<div style="padding: 32px; border-radius: 22px; background: #FFFFFF; display: flex; flex-direction: column; gap: 24px">
+<span style="align-self: flex-start; padding: 6px 12px; border-radius: 999px; background: #E3EFEB; color: #0E5E57; font-size: 13px; font-weight: 600">FCCPT approved</span>
+<p style="font-family: 'Fraunces', serif; font-size: 21px; line-height: 1.45">“[Real student quote about the experience — added once permission is given.]”</p>
+<div style="margin-top: auto; display: flex; align-items: center; gap: 12px"><div style="width: 44px; height: 44px; border-radius: 50%; background: #E9E2D5"></div><div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 600">[Student name]</span><span style="font-size: 13px; color: #52676C">DPT [University], [Year]</span></div></div>
+</div>
+<div style="padding: 32px; border-radius: 22px; background: #FFFFFF; display: flex; flex-direction: column; gap: 24px">
+<span style="align-self: flex-start; padding: 6px 12px; border-radius: 999px; background: #E3EFEB; color: #0E5E57; font-size: 13px; font-weight: 600">Now practising in [State]</span>
+<p style="font-family: 'Fraunces', serif; font-size: 21px; line-height: 1.45">“[Real student quote about the experience — added once permission is given.]”</p>
+<div style="margin-top: auto; display: flex; align-items: center; gap: 12px"><div style="width: 44px; height: 44px; border-radius: 50%; background: #E9E2D5"></div><div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 600">[Student name]</span><span style="font-size: 13px; color: #52676C">DPT [University], [Year]</span></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ ELIGIBILITY FORM ============ -->
+<section id="eligibility" style="width: 100%">
+<div style="max-width: 1240px; margin: 0 auto; padding: 120px 40px">
+<div style="border-radius: 32px; background: #FFFFFF; border: 1px solid #E4DED3; display: grid; grid-template-columns: 0.85fr 1.15fr; overflow: hidden">
+<div style="padding: 56px; background: #0B3B3C; color: #F7F4EE; display: flex; flex-direction: column; gap: 24px">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: {{accent}}">Free eligibility check</span>
+<h2 style="font-size: 46px; line-height: 1.08">See if the US path is right for you.</h2>
+<p style="font-size: 17px; line-height: 1.65; color: #C9DED9">Tell us a little about yourself. If you’re a fit, you’ll receive a detailed video walkthrough in your inbox — free, with no obligation.</p>
+<div style="margin-top: auto; display: flex; flex-direction: column; gap: 14px; font-size: 15px; color: #E6F1EE">
+<div style="display: flex; gap: 10px; align-items: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9FD3C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>Takes about 3 minutes</div>
+<div style="display: flex; gap: 10px; align-items: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9FD3C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>Your details stay private</div>
+<div style="display: flex; gap: 10px; align-items: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9FD3C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>Video arrives by email</div>
+</div>
+</div>
+<form style="padding: 56px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 20px">
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600">Full name<input type="text" placeholder="e.g. Ayesha Khan" style="height: 52px; padding: 0 16px; border-radius: 12px; border: 1px solid #D6CFC2; background: #FBFAF7; font-size: 16px; color: #0B2530"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600">Email<input type="email" placeholder="you@email.com" style="height: 52px; padding: 0 16px; border-radius: 12px; border: 1px solid #D6CFC2; background: #FBFAF7; font-size: 16px; color: #0B2530"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600">WhatsApp number<input type="tel" placeholder="+92 3XX XXXXXXX" style="height: 52px; padding: 0 16px; border-radius: 12px; border: 1px solid #D6CFC2; background: #FBFAF7; font-size: 16px; color: #0B2530"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600">DPT graduation year<select style="height: 52px; padding: 0 14px; border-radius: 12px; border: 1px solid #D6CFC2; background: #FBFAF7; font-size: 16px; color: #0B2530"><option>Select year</option><option>2026</option><option>2025</option><option>2024</option><option>2023 or earlier</option><option>Still studying</option></select></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600">University<input type="text" placeholder="Your DPT university" style="height: 52px; padding: 0 16px; border-radius: 12px; border: 1px solid #D6CFC2; background: #FBFAF7; font-size: 16px; color: #0B2530"></label>
+<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600">Clinical experience<select style="height: 52px; padding: 0 14px; border-radius: 12px; border: 1px solid #D6CFC2; background: #FBFAF7; font-size: 16px; color: #0B2530"><option>Select</option><option>None yet</option><option>Less than 1 year</option><option>1–3 years</option><option>3+ years</option></select></label>
+<fieldset style="grid-column: span 2; border: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+<legend style="font-size: 14px; font-weight: 600; padding: 0; margin-bottom: 10px">Where are you with TOEFL?</legend>
+<div style="display: flex; gap: 10px">
+<label style="display: flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; border: 1.5px solid #0E5E57; background: #E3EFEB; font-size: 15px; font-weight: 600; color: #0E5E57"><input type="radio" name="toefl" checked="" style="accent-color: #0E5E57; margin: 0">Not started</label>
+<label style="display: flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; border: 1px solid #D6CFC2; font-size: 15px"><input type="radio" name="toefl" style="accent-color: #0E5E57; margin: 0">Preparing</label>
+<label style="display: flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; border: 1px solid #D6CFC2; font-size: 15px"><input type="radio" name="toefl" style="accent-color: #0E5E57; margin: 0">Taken — have scores</label>
+</div>
+</fieldset>
+<fieldset style="grid-column: span 2; border: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+<legend style="font-size: 14px; font-weight: 600; padding: 0; margin-bottom: 10px">Have you started credential evaluation (FCCPT)?</legend>
+<div style="display: flex; gap: 10px">
+<label style="display: flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; border: 1px solid #D6CFC2; font-size: 15px"><input type="radio" name="fccpt" style="accent-color: #0E5E57; margin: 0">Not yet</label>
+<label style="display: flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; border: 1px solid #D6CFC2; font-size: 15px"><input type="radio" name="fccpt" style="accent-color: #0E5E57; margin: 0">In progress</label>
+<label style="display: flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; border: 1px solid #D6CFC2; font-size: 15px"><input type="radio" name="fccpt" style="accent-color: #0E5E57; margin: 0">Completed</label>
+</div>
+</fieldset>
+<div style="grid-column: span 2; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-top: 10px">
+<span style="font-size: 13px; color: #52676C; max-width: 300px; line-height: 1.5">By submitting, you agree to receive the walkthrough video and follow-up emails.</span>
+<a href="EligibilityThanks.dc.html" style="display: flex; align-items: center; gap: 10px; padding: 18px 30px; border-radius: 999px; background: {{accent}}; color: #0B2530; font-size: 17px; font-weight: 700">Check my eligibility
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+</form>
+</div>
+</div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" style="width: 100%">
+<div style="max-width: 1240px; margin: 0 auto; padding: 0 40px 120px; display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 80px">
+<div style="display: flex; flex-direction: column; gap: 18px">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #B8532A">FAQ</span>
+<h2 style="font-size: 52px; line-height: 1.08">Questions students ask first.</h2>
+<p style="font-size: 17px; line-height: 1.6; color: #3F5559">Still unsure? Message us on <a href="Contact.dc.html" style="font-weight: 600; text-decoration: underline">WhatsApp</a> — we reply within a day.</p>
+</div>
+<div style="display: flex; flex-direction: column">
+<div style="padding: 28px 0; border-top: 1px solid #D6CFC2; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 24px"><h3 style="font-size: 23px">How long does the whole process take?</h3><span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 50%; background: #0B3B3C; color: #F7F4EE; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14"></path></svg></span></div>
+<p style="font-size: 16px; line-height: 1.65; color: #3F5559; max-width: 620px">[Typical range with a short explanation — depends on credential evaluation, exam attempts and the visa route.]</p>
+</div>
+<div style="padding: 28px 0; border-top: 1px solid #D6CFC2; display: flex; justify-content: space-between; align-items: center; gap: 24px"><h3 style="font-size: 23px">Is my DPT from Pakistan accepted in the US?</h3><span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 50%; border: 1px solid #0B3B3C; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0B3B3C" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></div>
+<div style="padding: 28px 0; border-top: 1px solid #D6CFC2; display: flex; justify-content: space-between; align-items: center; gap: 24px"><h3 style="font-size: 23px">Can you guarantee a visa or a job?</h3><span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 50%; border: 1px solid #0B3B3C; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0B3B3C" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></div>
+<div style="padding: 28px 0; border-top: 1px solid #D6CFC2; display: flex; justify-content: space-between; align-items: center; gap: 24px"><h3 style="font-size: 23px">How do I pay, and when does my plan start?</h3><span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 50%; border: 1px solid #0B3B3C; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0B3B3C" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></div>
+<div style="padding: 28px 0; border-top: 1px solid #D6CFC2; border-bottom: 1px solid #D6CFC2; display: flex; justify-content: space-between; align-items: center; gap: 24px"><h3 style="font-size: 23px">Are sessions in English or Urdu?</h3><span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 50%; border: 1px solid #0B3B3C; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0B3B3C" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></div>
+</div>
+</div>
+</section>
+
+<!-- ============ FINAL CTA + FOOTER ============ -->
+<footer id="contact" style="width: 100%; background: #0B2530; color: #E6F1EE">
+<div style="max-width: 1240px; margin: 0 auto; padding: 100px 40px 48px; display: flex; flex-direction: column; gap: 80px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 48px">
+<h2 style="font-size: 60px; line-height: 1.05; max-width: 720px; color: #F7F4EE">Your US career starts with <span style="font-style: italic; color: {{accent}}">one honest conversation.</span></h2>
+<a href="#eligibility" style="flex-shrink: 0; display: flex; align-items: center; gap: 10px; padding: 20px 32px; border-radius: 999px; background: {{accent}}; color: #0B2530; font-size: 18px; font-weight: 700">Check my eligibility
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+<div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; padding-top: 48px; border-top: 1px solid #22404A">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'Fraunces', serif; font-size: 22px; color: #F7F4EE">Dr. [Full Name], DPT</span>
+<p style="font-size: 15px; line-height: 1.6; color: #A9BDC0; max-width: 300px">Honest, personal guidance for Pakistani DPT graduates building a physical therapy career in the United States.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; font-size: 15px">
+<span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #7F979B">Explore</span>
+<a href="Pathway.dc.html" style="color: #E6F1EE">The Pathway</a><a href="#how" style="color: #E6F1EE">How It Works</a><a href="Services.dc.html" style="color: #E6F1EE">Services</a><a href="About.dc.html" style="color: #E6F1EE">About</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; font-size: 15px">
+<span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #7F979B">Help</span>
+<a href="FAQ.dc.html" style="color: #E6F1EE">FAQ</a><a href="#faq" style="color: #E6F1EE">Payment &amp; refunds</a><a href="#faq" style="color: #E6F1EE">Privacy policy</a><a href="#faq" style="color: #E6F1EE">Terms</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; font-size: 15px">
+<span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #7F979B">Contact</span>
+<span>[email@domain.com]</span><span>WhatsApp: [+92 …]</span><span>Instagram · YouTube · LinkedIn</span>
+</div>
+</div>
+<div style="display: flex; justify-content: space-between; font-size: 13px; color: #7F979B; gap: 24px">
+<span>© 2026 Dr. [Full Name]. All rights reserved.</span>
+<span>Educational guidance only — not legal or immigration advice.</span>
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#F2915F","options":["#F2915F","#F2B84B","#7FD1B9","#9DB8F2"]},"$preview":{"width":1440,"height":8200}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#F2915F' };
+}
+}
+</script>
+</body>
+</html>
