@@ -1,6 +1,6 @@
 @extends('layouts.site')
 
-@section('title', 'Checkout — '.$plan->name)
+@section('title', 'Checkout | '.$plan->name)
 
 {{--
     Step 1 of checkout. Like the other public pages this is cached at the edge
@@ -11,7 +11,7 @@
         <div class="wrap page-hero page-hero--tight">
             <span class="eyebrow">Checkout · Step 1 of 2</span>
             <h1 class="page-hero__title">Your details.</h1>
-            <p class="page-hero__lede">Tell us who you are. On the next step you’ll see our bank account, transfer the amount and upload your receipt — no card needed.</p>
+            <p class="page-hero__lede">Tell us who you are. On the next step you’ll see our bank account, transfer the amount and upload your receipt, no card needed.</p>
         </div>
     </section>
 

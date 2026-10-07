@@ -82,7 +82,7 @@ class PagesTest extends TestCase
 
         $this->get('/services')
             ->assertSee('$30,000')
-            ->assertSee('$[—]')
+            ->assertSee('$[-]')
             ->assertSee(route('checkout.show', 'roadmap-session'));
     }
 

@@ -1,6 +1,6 @@
 @extends('layouts.portal')
 
-@section('title', 'Your details — Affiliate portal')
+@section('title', 'Your details | Affiliate portal')
 
 @section('content')
     <section>

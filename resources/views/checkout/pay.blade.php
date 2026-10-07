@@ -1,6 +1,6 @@
 @extends('layouts.site')
 
-@section('title', 'Payment — '.$order->number)
+@section('title', 'Payment | '.$order->number)
 
 @php
     $bankRows = array_filter([
@@ -18,7 +18,7 @@
         <div class="wrap page-hero page-hero--tight">
             <span class="eyebrow">Checkout · Step 2 of 2 · Order {{ $order->number }}</span>
             <h1 class="page-hero__title">Pay &amp; upload your receipt.</h1>
-            <p class="page-hero__lede">Transfer the exact amount to the account below, then upload a screenshot or PDF of your receipt. Keep this page’s link — it is your order page.</p>
+            <p class="page-hero__lede">Transfer the exact amount to the account below, then upload a screenshot or PDF of your receipt. Keep this page’s link, it is your order page.</p>
         </div>
     </section>
 
@@ -46,13 +46,13 @@
                 <div class="form-success" data-form-success @if ($awaiting) hidden @endif>
                     <div class="icon-tile"><x-icon name="check" stroke="2.2" /></div>
                     @if ($order->status === \App\Enums\OrderStatus::Confirmed)
-                        <h3>Payment confirmed — welcome aboard.</h3>
+                        <h3>Payment confirmed, welcome aboard.</h3>
                         <p>Your order {{ $order->number }} is confirmed. Message us on WhatsApp to schedule your first session.</p>
                     @elseif ($order->status === \App\Enums\OrderStatus::Rejected)
                         <h3>We couldn’t verify this payment.</h3>
                         <p>Please contact us about order {{ $order->number }} and we’ll sort it out with you.</p>
                     @else
-                        <h3>Thank you — receipt received.</h3>
+                        <h3>Thank you, receipt received.</h3>
                         <p>We verify bank transfers manually, usually within one working day. You’ll get an email as soon as order {{ $order->number }} is confirmed.</p>
                     @endif
                     <p>WhatsApp:

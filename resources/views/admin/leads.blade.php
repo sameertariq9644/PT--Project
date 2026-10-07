@@ -1,11 +1,11 @@
 @extends('layouts.admin')
 
-@section('title', 'Admin — Leads')
+@section('title', 'Admin | Leads')
 
 @php
     // Student, the configurable answer columns, then Status, Video email and Date.
     $cols = implode(' ', ['1.7fr', ...array_column($columns, 'table_width'), '1.1fr', '1.1fr', '0.7fr']);
-    $percent = fn (int $part, int $whole): string => $whole > 0 ? round($part / $whole * 100).'%' : '—';
+    $percent = fn (int $part, int $whole): string => $whole > 0 ? round($part / $whole * 100).'%' : '-';
     $eligible = (int) ($counts['eligible'] ?? 0);
     $customers = (int) ($counts['customer'] ?? 0);
 @endphp
@@ -59,7 +59,7 @@
                         <span class="person__sub">{{ $lead->email }}</span>
                     </a>
                     @foreach ($columns as $column)
-                        <span>{{ $lead->answer($column['key']) ?? '—' }}</span>
+                        <span>{{ $lead->answer($column['key']) ?? '-' }}</span>
                     @endforeach
                     <form method="post" action="{{ route('admin.leads.status', $lead) }}">
                         @csrf
@@ -73,7 +73,7 @@
                     @if ($lead->video_sent_at)
                         <span class="sent"><x-icon name="check" size="16" stroke="2.6" />Sent</span>
                     @elseif ($lead->status === \App\Enums\LeadStatus::NotEligible)
-                        <span class="dash">—</span>
+                        <span class="dash">-</span>
                     @else
                         <form method="post" action="{{ route('admin.leads.video', $lead) }}">
                             @csrf

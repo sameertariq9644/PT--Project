@@ -36,7 +36,7 @@ class ServicesTest extends TestCase
         $plan = Plan::factory()->unpriced()->create(['slug' => 'roadmap-session', 'name' => 'Roadmap Session']);
 
         // Warm the cached plan list the public pages read.
-        $this->get('/services')->assertSee('$[—]');
+        $this->get('/services')->assertSee('$[-]');
 
         $this->actingAs($this->admin())
             ->put("/admin/services/{$plan->id}", $this->payload())
@@ -49,7 +49,7 @@ class ServicesTest extends TestCase
         $this->assertSame(['60-minute call', 'State shortlist'], $plan->highlights);
         $this->assertSame(['60-minute call', 'Roadmap PDF'], $plan->features);
 
-        $this->get('/services')->assertSee('$15,000')->assertSee('MOST CHOSEN')->assertDontSee('$[—]');
+        $this->get('/services')->assertSee('$15,000')->assertSee('MOST CHOSEN')->assertDontSee('$[-]');
     }
 
     public function test_an_empty_price_and_unticked_boxes_are_stored_as_such(): void

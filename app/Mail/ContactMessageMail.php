@@ -14,7 +14,7 @@ class ContactMessageMail extends AdminNotificationMail
 
     protected function subjectLine(): string
     {
-        return 'Contact form: '.$this->contactMessage->topic.' — '.$this->contactMessage->name;
+        return 'Contact form: '.$this->contactMessage->topic.', '.$this->contactMessage->name;
     }
 
     protected function heading(): string

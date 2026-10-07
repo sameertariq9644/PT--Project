@@ -78,13 +78,12 @@
                     <div class="footer-col">
                         <span class="footer-col__title">Contact</span>
                         <a href="{{ route('contact') }}" class="footer-col__link">{{ $contactEmail }}</a>
-                        <span>WhatsApp: {{ $contactWhatsapp }}</span>
                         <span>{{ config('site.socials') }}</span>
                     </div>
                 </div>
                 <div class="footer-legal">
                     <span>© {{ date('Y') }} Dr. [Full Name]. All rights reserved.</span>
-                    <span>Educational guidance only — not legal or immigration advice.</span>
+                    <span>Educational guidance only, not legal or immigration advice.</span>
                 </div>
             </div>
         </footer>

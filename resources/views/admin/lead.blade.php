@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Admin — '.$lead->name)
+@section('title', 'Admin | '.$lead->name)
 
 @section('content')
     <main class="admin-main">
@@ -23,10 +23,10 @@
                     <div class="order-detail__row"><span>Email</span><span><a href="mailto:{{ $lead->email }}">{{ $lead->email }}</a></span></div>
                     <div class="order-detail__row"><span>WhatsApp</span><span>{{ $lead->whatsapp }}</span></div>
                     @foreach ($fields as $field)
-                        <div class="order-detail__row"><span>{{ $field['label'] }}</span><span>{{ $lead->answer($field['key']) ?? '—' }}</span></div>
+                        <div class="order-detail__row"><span>{{ $field['label'] }}</span><span>{{ $lead->answer($field['key']) ?? '-' }}</span></div>
                     @endforeach
-                    <div class="order-detail__row"><span>Referred by</span><span>{{ $lead->affiliate ? $lead->affiliate->user->name.' ('.$lead->affiliate->code.')' : '—' }}</span></div>
-                    <div class="order-detail__row"><span>Campaign</span><span>{{ $lead->utm_campaign ?? '—' }}</span></div>
+                    <div class="order-detail__row"><span>Referred by</span><span>{{ $lead->affiliate ? $lead->affiliate->user->name.' ('.$lead->affiliate->code.')' : '-' }}</span></div>
+                    <div class="order-detail__row"><span>Campaign</span><span>{{ $lead->utm_campaign ?? '-' }}</span></div>
                     <div class="order-detail__row"><span>Video email</span><span>{{ $lead->video_sent_at ? 'Sent '.\App\Support\SiteTime::format($lead->video_sent_at, 'M j, Y · g:i A') : 'Not sent' }}</span></div>
                 </div>
 

@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Admin — Settings')
+@section('title', 'Admin | Settings')
 
 @php
     // Saved value → what the form shows, honouring old input after a validation error.
@@ -40,7 +40,7 @@
                     <h2>Outgoing email</h2>
                     <span>
                         @if ($usingEnvMail)
-                            No SMTP server saved — the site is using the server default (“{{ $envMailer }}”). With “log”, emails are written to the log file instead of being delivered.
+                            No SMTP server saved, the site is using the server default (“{{ $envMailer }}”). With “log”, emails are written to the log file instead of being delivered.
                         @else
                             Emails are sent through the SMTP server below.
                         @endif
@@ -71,7 +71,7 @@
                         <input type="text" name="mail[username]" value="{{ $value('mail.username') }}" class="input" autocomplete="off">
                     </label>
                     <label class="field field--full">Password
-                        <input type="password" name="mail[password]" value="" placeholder="{{ $hasMailPassword ? 'Saved — leave blank to keep it' : 'SMTP password or Gmail App Password' }}" class="input" autocomplete="new-password">
+                        <input type="password" name="mail[password]" value="" placeholder="{{ $hasMailPassword ? 'Saved, leave blank to keep it' : 'SMTP password or Gmail App Password' }}" class="input" autocomplete="new-password">
                         <span class="field__hint">Stored encrypted and never shown again. Leave blank to keep the saved password.</span>
                     </label>
                 </div>

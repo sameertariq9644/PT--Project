@@ -20,6 +20,6 @@ class LeadController extends Controller
             $captureLead->handle($request->validated(), Attribution::fromRequest($request), $request->ip());
         }
 
-        return response()->json(['message' => 'Thank you — we have received your details.'], 201);
+        return response()->json(['message' => 'Thank you, we have received your details.'], 201);
     }
 }

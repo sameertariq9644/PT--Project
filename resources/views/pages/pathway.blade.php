@@ -1,13 +1,13 @@
 @extends('layouts.site')
 
-@section('title', 'The Pathway — DPT to USA')
+@section('title', 'The Pathway | DPT to USA')
 
 @section('content')
     <section>
         <div class="wrap page-hero">
             <span class="eyebrow">The pathway</span>
             <h1 class="page-hero__title">Six steps from Pakistan to a <span class="hl">US licence.</span></h1>
-            <p class="page-hero__lede">Here is the whole route in plain language — what each step is, what you’ll need, and where graduates most often lose time.</p>
+            <p class="page-hero__lede">Here is the whole route in plain language, what each step is, what you’ll need, and where graduates most often lose time.</p>
             <div class="step-rail">
                 @foreach ($steps as $step)
                     <div class="step-rail__item">
@@ -29,8 +29,7 @@
                     </div>
                     <div class="pathway-step__main">
                         <h3>{{ $step['title'] }}</h3>
-                        <p>{{ $step['body'] }}</p>
-                        <div class="pathway-step__time">
+                        <p>{{ $step['body'] }}</p>                        <div class="pathway-step__time">
                             <x-icon name="clock" size="18" />Typical time: <strong>{{ $step['time'] }}</strong>
                         </div>
                     </div>
@@ -50,7 +49,7 @@
             @endforeach
             <div class="notice">
                 <x-icon name="info" size="22" class="icon-teal" />
-                <span>Requirements change and differ by state. This page is a general overview; always confirm with FSBPT, FCCPT and your state board. We are not immigration lawyers — for visa filings, you’ll work with a licensed attorney.</span>
+                <span>Requirements change and differ by state. This page is a general overview; always confirm with FSBPT, FCCPT and your state board. We are not immigration lawyers, for visa filings, you’ll work with a licensed attorney.</span>
             </div>
         </div>
     </section>
@@ -59,7 +58,7 @@
         <div class="wrap pathway-cta__inner">
             <div class="pathway-cta__copy">
                 <span class="eyebrow">Not sure where you stand?</span>
-                <h2 class="h2">Find out which step you’re on — free.</h2>
+                <h2 class="h2">Find out which step you’re on, free.</h2>
                 <p>Answer a few questions and get a personal video walkthrough in your inbox.</p>
                 <a href="{{ route('home') }}#eligibility" class="btn btn--row btn--accent">Check my eligibility<x-icon name="arrow-right" size="18" stroke="2.2" /></a>
             </div>

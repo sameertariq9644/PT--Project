@@ -1,6 +1,6 @@
 @extends('layouts.site')
 
-@section('title', 'Services — DPT to USA')
+@section('title', 'Services | DPT to USA')
 
 @php
     $paySteps = [
@@ -15,7 +15,7 @@
         <div class="wrap page-hero">
             <span class="eyebrow">Services</span>
             <h1 class="page-hero__title">Choose the support that fits <span class="hl">where you are.</span></h1>
-            <p class="page-hero__lede">Every plan is one-to-one with Dr. [Name]. Prices are in US dollars. Pay by bank transfer — no card needed.</p>
+            <p class="page-hero__lede">Every plan is one-to-one with Dr. [Name]. Prices are in US dollars. Pay by bank transfer, no card needed.</p>
         </div>
     </section>
 
@@ -62,7 +62,7 @@
                             @if ($cell === true)
                                 <span class="compare__cell--check"><x-icon name="check" size="20" stroke="2.2" /></span>
                             @elseif ($cell === false)
-                                <span class="compare__cell compare__cell--none">—</span>
+                                <span class="compare__cell compare__cell--none">-</span>
                             @else
                                 <span class="compare__cell">{{ $cell }}</span>
                             @endif

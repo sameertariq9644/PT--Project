@@ -53,15 +53,15 @@ class LeadCaptureTest extends TestCase
             ->assertSeeInHtml('Hamza Ali')
             ->assertSeeInHtml('+92 301 7654321')
             ->assertSeeInHtml('Riphah International University')
-            ->assertSeeInText('TOEFL: Preparing');
+            ->assertSeeInText('FCCPT: Not yet');
     }
 
     public function test_invalid_submissions_return_validation_errors_as_json(): void
     {
-        $this->post('/leads', $this->leadPayload(['email' => 'not-an-email', 'toefl' => 'Fluent', 'university' => '']))
+        $this->post('/leads', $this->leadPayload(['email' => 'not-an-email', 'fccpt' => 'Fluent', 'university' => '']))
             ->assertUnprocessable()
-            ->assertJsonValidationErrors(['email', 'toefl', 'university'])
-            ->assertJsonMissingValidationErrors(['name', 'fccpt']);
+            ->assertJsonValidationErrors(['email', 'fccpt', 'university'])
+            ->assertJsonMissingValidationErrors(['name', 'graduation_year']);
 
         $this->assertDatabaseCount('leads', 0);
         Mail::assertNothingQueued();
@@ -97,9 +97,9 @@ class LeadCaptureTest extends TestCase
         Settings::set(['notifications.lead_recipients' => 'owner@example.com']);
 
         $this->postJson('/leads', $this->leadPayload())->assertCreated();
-        $this->postJson('/leads', $this->leadPayload(['email' => 'AYESHA@example.com', 'toefl' => 'Taken']))->assertCreated();
+        $this->postJson('/leads', $this->leadPayload(['email' => 'AYESHA@example.com', 'fccpt' => 'Completed']))->assertCreated();
 
-        $this->assertSame('Taken', Lead::query()->sole()->answer('toefl'));
+        $this->assertSame('Completed', Lead::query()->sole()->answer('fccpt'));
         Mail::assertQueuedCount(1);
     }
 

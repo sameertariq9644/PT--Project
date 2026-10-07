@@ -50,13 +50,13 @@
         </div>
 
         <noscript>
-            <p class="form-alert field--full">This form needs JavaScript. You can also reach us by email or WhatsApp — see the <a href="{{ route('contact') }}">contact page</a>.</p>
+            <p class="form-alert field--full">This form needs JavaScript. You can also reach us by email or WhatsApp, see the <a href="{{ route('contact') }}">contact page</a>.</p>
         </noscript>
     </form>
 
     <div class="form-success" data-form-success hidden>
         <div class="icon-tile"><x-icon name="check" stroke="2.2" /></div>
-        <h3>Thank you — we’ve got your details.</h3>
+        <h3>Thank you, we’ve got your details.</h3>
         <p>We review every submission personally. If you’re a fit, the detailed video walkthrough will arrive in your inbox soon. Check your spam folder too, just in case.</p>
     </div>
 </div>

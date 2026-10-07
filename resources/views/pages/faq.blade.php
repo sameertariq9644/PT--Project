@@ -1,13 +1,13 @@
 @extends('layouts.site')
 
-@section('title', 'FAQ — DPT to USA')
+@section('title', 'FAQ | DPT to USA')
 
 @section('content')
     <section>
         <div class="wrap page-hero">
             <span class="eyebrow">FAQ</span>
             <h1 class="page-hero__title">Answers to what students ask most.</h1>
-            <p class="page-hero__lede">Can’t find your question? Message us on WhatsApp — we reply within a day.</p>
+            <p class="page-hero__lede">Can’t find your question? Message us on WhatsApp, we reply within a day.</p>
         </div>
     </section>
 

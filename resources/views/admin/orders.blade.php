@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Admin — Orders')
+@section('title', 'Admin | Orders')
 
 @php
     $tabs = ['pending' => 'Pending', 'confirmed' => 'Confirmed', 'rejected' => 'Rejected', 'awaiting_payment' => 'Awaiting payment'];
@@ -90,8 +90,8 @@
                         <div class="order-detail__row"><span>WhatsApp</span><span>{{ $selected->whatsapp }}</span></div>
                         <div class="order-detail__row"><span>Plan</span><span>{{ $selected->plan_name }}</span></div>
                         <div class="order-detail__row"><span>Amount due</span><span>{{ $selected->formattedAmount() }}</span></div>
-                        <div class="order-detail__row"><span>Transaction ID</span><span>{{ $selected->transaction_id ?? '—' }}</span></div>
-                        <div class="order-detail__row"><span>Transfer date</span><span>{{ $selected->transferred_on?->format('M j, Y') ?? '—' }}</span></div>
+                        <div class="order-detail__row"><span>Transaction ID</span><span>{{ $selected->transaction_id ?? '-' }}</span></div>
+                        <div class="order-detail__row"><span>Transfer date</span><span>{{ $selected->transferred_on?->format('M j, Y') ?? '-' }}</span></div>
                         @if ($selected->affiliate)
                             <div class="order-detail__row"><span>Affiliate</span><span>{{ $selected->affiliate->user->name }} · {{ rtrim(rtrim(number_format($selected->commission_rate, 2), '0'), '.') }}%</span></div>
                             <div class="order-detail__row"><span>Commission</span><span>{{ \App\Support\Money::usd($selected->status === \App\Enums\OrderStatus::Confirmed ? $selected->commission_amount : $selected->expectedCommission()) }}</span></div>

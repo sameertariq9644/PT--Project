@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', $template->exists ? 'Admin — Edit template' : 'Admin — New template')
+@section('title', $template->exists ? 'Admin | Edit template' : 'Admin | New template')
 
 @section('content')
     <main class="admin-main">
@@ -14,7 +14,7 @@
                         <span class="status status--dark">System</span>
                     @endif
                 </div>
-                <span>Write in Markdown. Click a placeholder to insert it — it is replaced with the real value when the email is sent.</span>
+                <span>Write in Markdown. Click a placeholder to insert it, it is replaced with the real value when the email is sent.</span>
             </div>
             <div class="admin-head__tools">
                 <a href="{{ route('admin.email-templates') }}" class="tool-btn tool-btn--link">Cancel</a>

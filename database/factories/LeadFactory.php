@@ -26,7 +26,6 @@ class LeadFactory extends Factory
                 'graduation_year' => '2025',
                 'university' => 'Riphah International University',
                 'clinical_experience' => 'Less than 1 year',
-                'toefl' => 'Preparing',
                 'fccpt' => 'Not yet',
             ],
             'status' => LeadStatus::NeedsReview,

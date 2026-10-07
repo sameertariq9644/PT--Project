@@ -86,17 +86,6 @@ return [
             'width' => 'half',
         ],
         [
-            'key' => 'toefl',
-            'label' => 'Where are you with TOEFL?',
-            'type' => 'radio',
-            'options' => ['Not started' => 'Not started', 'Preparing' => 'Preparing', 'Taken' => 'Taken — have scores'],
-            'default' => 'Not started',
-            'rules' => ['required'],
-            'in_table' => true,
-            'table_label' => 'TOEFL',
-            'table_width' => '0.9fr',
-        ],
-        [
             'key' => 'fccpt',
             'label' => 'Have you started credential evaluation (FCCPT)?',
             'type' => 'radio',

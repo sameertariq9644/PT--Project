@@ -1,6 +1,6 @@
 @extends('layouts.site')
 
-@section('title', 'Contact — DPT to USA')
+@section('title', 'Contact | DPT to USA')
 
 @php
     $channels = [
@@ -15,7 +15,7 @@
         <div class="wrap page-hero">
             <span class="eyebrow">Contact</span>
             <h1 class="page-hero__title">Let’s talk about your next step.</h1>
-            <p class="page-hero__lede">Questions about the process or a plan? Reach out — you’ll hear back within one working day.</p>
+            <p class="page-hero__lede">Questions about the process or a plan? Reach out, you’ll hear back within one working day.</p>
         </div>
     </section>
 
@@ -63,7 +63,7 @@
                 <div class="form-success" data-form-success hidden>
                     <div class="icon-tile"><x-icon name="check" stroke="2.2" /></div>
                     <h3>Message sent.</h3>
-                    <p>Thank you for reaching out — you’ll hear back from us within one working day.</p>
+                    <p>Thank you for reaching out, you’ll hear back from us within one working day.</p>
                 </div>
             </div>
             <div class="contact-side">

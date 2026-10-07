@@ -83,7 +83,7 @@ class OrderController extends Controller
 
         return $this->backToOrder($order, $confirmed
             ? 'Payment confirmed. '.$order->name.' has been emailed.'
-            : 'Order '.$order->number.' was already '.mb_strtolower($order->refresh()->status->label()).' — nothing changed.');
+            : 'Order '.$order->number.' was already '.mb_strtolower($order->refresh()->status->label()).', nothing changed.');
     }
 
     public function reject(RejectOrderRequest $request, Order $order, RejectOrder $rejectOrder): RedirectResponse
@@ -92,7 +92,7 @@ class OrderController extends Controller
 
         return $this->backToOrder($order, $rejected
             ? 'Order '.$order->number.' rejected. '.$order->name.' has been emailed.'
-            : 'Order '.$order->number.' was already '.mb_strtolower($order->refresh()->status->label()).' — nothing changed.');
+            : 'Order '.$order->number.' was already '.mb_strtolower($order->refresh()->status->label()).', nothing changed.');
     }
 
     protected function backToOrder(Order $order, string $message): RedirectResponse

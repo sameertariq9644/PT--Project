@@ -74,7 +74,6 @@ export function leads() {
             graduation_year: '2025',
             university: 'Load Test University',
             clinical_experience: 'None yet',
-            toefl: 'Preparing',
             fccpt: 'Not yet',
             _elapsed: '9000',
             website: 'k6-load-test',

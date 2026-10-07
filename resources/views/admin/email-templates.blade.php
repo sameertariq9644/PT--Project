@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Admin — Email templates')
+@section('title', 'Admin | Email templates')
 
 @section('content')
     <main class="admin-main">

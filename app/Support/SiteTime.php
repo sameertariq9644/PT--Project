@@ -41,6 +41,6 @@ class SiteTime
 
     public static function format(?DateTimeInterface $moment, string $format = 'M j'): string
     {
-        return $moment ? static::local($moment)->format($format) : '—';
+        return $moment ? static::local($moment)->format($format) : '-';
     }
 }

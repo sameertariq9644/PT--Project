@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Admin — Edit '.$plan->name)
+@section('title', 'Admin | Edit '.$plan->name)
 
 @section('content')
     <main class="admin-main">
@@ -27,7 +27,7 @@
                 <label class="field">Kicker (small line above the name)
                     <input type="text" name="kicker" value="{{ old('kicker', $plan->kicker) }}" class="input" required>
                 </label>
-                <label class="field">Price in USD (leave empty to show “$[—]”)
+                <label class="field">Price in USD (leave empty to show “$[-]”)
                     <input type="number" name="price" value="{{ old('price', $plan->price) }}" min="0" step="1" class="input">
                 </label>
                 <label class="field">Position
@@ -49,14 +49,14 @@
                     <label class="check check--box">
                         <input type="hidden" name="is_featured" value="0">
                         <input type="checkbox" name="is_featured" value="1" @checked(old('is_featured', $plan->is_featured))>
-                        Featured — shows the “Most chosen” badge
+                        Featured, shows the “Most chosen” badge
                     </label>
                 </div>
                 <div class="field">Visibility
                     <label class="check check--box">
                         <input type="hidden" name="is_active" value="0">
                         <input type="checkbox" name="is_active" value="1" @checked(old('is_active', $plan->is_active))>
-                        Active — shown on the public site
+                        Active, shown on the public site
                     </label>
                 </div>
             </div>

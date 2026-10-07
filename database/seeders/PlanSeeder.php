@@ -11,7 +11,7 @@ class PlanSeeder extends Seeder
 {
     /**
      * Create the three plans from the design copy. Prices start empty
-     * ("$[—]") and are set under Admin → Services.
+     * ("$[-]") and are set under Admin → Services.
      */
     public function run(): void
     {

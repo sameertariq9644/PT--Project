@@ -81,7 +81,7 @@ class OrdersTest extends TestCase
         $confirmedAt = $order->refresh()->confirmed_at;
         $this->travel(5)->minutes();
 
-        $this->post("/admin/orders/{$order->number}/confirm")->assertSessionHas('status', "Order {$order->number} was already confirmed — nothing changed.");
+        $this->post("/admin/orders/{$order->number}/confirm")->assertSessionHas('status', "Order {$order->number} was already confirmed, nothing changed.");
         $this->post("/admin/orders/{$order->number}/reject", ['admin_note' => 'Changed my mind']);
 
         $order->refresh();

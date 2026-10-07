@@ -18,13 +18,13 @@ class DefaultEmailTemplates
         return [
             EmailTemplate::LeadVideo => [
                 'name' => 'Lead video',
-                'subject' => 'Your US physical therapy pathway — the detailed video',
+                'subject' => 'Your US physical therapy pathway: the detailed video',
                 'body' => <<<'MD'
                 Hi {{name}},
 
                 Thank you for completing the eligibility check. Based on your answers, the US pathway looks like a realistic option for you.
 
-                I recorded a detailed walkthrough that explains every step — credential evaluation, TOEFL, the NPTE, licensure and visas — and how I work with students:
+                I recorded a detailed walkthrough that explains every step (credential evaluation, TOEFL, the NPTE, licensure and visas) and how I work with students:
 
                 [Watch the detailed video]({{video_url}})
 
@@ -38,7 +38,7 @@ class DefaultEmailTemplates
             ],
             EmailTemplate::OrderReceived => [
                 'name' => 'Order received',
-                'subject' => 'We received your payment receipt — order {{order_number}}',
+                'subject' => 'We received your payment receipt, order {{order_number}}',
                 'body' => <<<'MD'
                 Hi {{name}},
 
@@ -54,11 +54,11 @@ class DefaultEmailTemplates
             ],
             EmailTemplate::OrderConfirmed => [
                 'name' => 'Order confirmed',
-                'subject' => 'Payment confirmed — welcome to {{plan}}',
+                'subject' => 'Payment confirmed, welcome to {{plan}}',
                 'body' => <<<'MD'
                 Hi {{name}},
 
-                Good news — your payment for **{{plan}}** ({{amount}}) is confirmed. Order number: **{{order_number}}**.
+                Good news, your payment for **{{plan}}** ({{amount}}) is confirmed. Order number: **{{order_number}}**.
 
                 **Next step:** message us on WhatsApp at {{whatsapp}} with your order number so we can schedule your first session.
 
@@ -70,7 +70,7 @@ class DefaultEmailTemplates
             ],
             EmailTemplate::OrderRejected => [
                 'name' => 'Order rejected',
-                'subject' => 'We could not verify your payment — order {{order_number}}',
+                'subject' => 'We could not verify your payment, order {{order_number}}',
                 'body' => <<<'MD'
                 Hi {{name}},
 

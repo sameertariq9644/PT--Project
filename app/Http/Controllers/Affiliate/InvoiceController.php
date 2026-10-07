@@ -21,7 +21,7 @@ class InvoiceController extends Controller
 
         if (! $this->stats->isCompletedMonth($month)) {
             return redirect()->route('affiliate.portal')
-                ->withErrors(['month' => 'Choose a month that has already ended — invoices cover completed months only.']);
+                ->withErrors(['month' => 'Choose a month that has already ended, invoices cover completed months only.']);
         }
 
         return redirect()->route('affiliate.invoices.show', $month);

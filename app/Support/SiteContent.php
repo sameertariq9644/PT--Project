@@ -19,7 +19,7 @@ class SiteContent
             [
                 'tag' => 'Documents',
                 'short' => 'Evaluation',
-                'title' => 'Credential evaluation',
+                'title' => 'Credential Evaluation',
                 'summary' => 'Your DPT coursework is reviewed against US standards by an approved agency such as FCCPT. We prepare your file so gaps don’t surprise you.',
                 'body' => 'An approved agency such as FCCPT compares your DPT coursework with US physical therapy education standards. Any gaps found may need extra coursework before you can move on.',
                 'time' => '[X–Y months]',
@@ -32,10 +32,10 @@ class SiteContent
             ],
             [
                 'tag' => 'English',
-                'short' => 'TOEFL',
-                'title' => 'TOEFL iBT',
-                'summary' => 'Most states and credentialing bodies need TOEFL scores. We set your target by section and a timeline that fits your exam plan.',
-                'body' => 'Most states and credentialing bodies require TOEFL iBT scores, often with minimum scores for each section — speaking is the one most people underestimate.',
+                'short' => 'English',
+                'title' => 'English Requirements',
+                'summary' => 'Most states and credentialing bodies need proof of English through TOEFL scores. We set your target by section and a timeline that fits your exam plan.',
+                'body' => 'Most states and credentialing bodies ask you to prove your English with TOEFL iBT scores, with a minimum for each section. A degree taught in English in Pakistan does not exempt you, and speaking is the section most people underestimate.',
                 'time' => '[X–Y months]',
                 'needs' => [
                     'Your target state’s minimum section scores',
@@ -61,9 +61,9 @@ class SiteContent
             [
                 'tag' => 'Licence',
                 'short' => 'State licence',
-                'title' => 'State licensure',
+                'title' => 'State Licensure',
                 'summary' => 'Every state board has its own rules and jurisprudence exam. Choosing the right state first can save you months.',
-                'body' => 'Each state board sets its own rules for internationally educated PTs — including jurisprudence exams and, in some states, a period of supervised clinical practice.',
+                'body' => 'Each state board sets its own rules for internationally educated PTs, including jurisprudence exams and, in some states, a period of supervised clinical practice.',
                 'time' => '[X–Y months]',
                 'needs' => [
                     'A carefully chosen first state',
@@ -75,9 +75,9 @@ class SiteContent
             [
                 'tag' => 'Immigration',
                 'short' => 'Visa',
-                'title' => 'VisaScreen & visa route',
-                'summary' => 'The Healthcare Worker Certificate, then the visa route that fits you — such as H-1B or an employment-based green card.',
-                'body' => 'Healthcare workers need a certificate (such as VisaScreen or the FCCPT certificate) before a visa can be issued. Then comes the route that fits you — for example an H-1B or an employment-based green card.',
+                'title' => 'VisaScreen',
+                'summary' => 'The Healthcare Worker Certificate, then the visa route that fits you, such as H-1B or an employment-based green card.',
+                'body' => 'Healthcare workers need a certificate (such as VisaScreen or the FCCPT certificate) before a visa can be issued. Then comes the route that fits you, for example an H-1B or an employment-based green card.',
                 'time' => '[Varies]',
                 'needs' => [
                     'Healthcare Worker Certificate',
@@ -89,8 +89,8 @@ class SiteContent
             [
                 'tag' => 'Arrival',
                 'short' => 'Arrival',
-                'title' => 'Job offer & relocation',
-                'summary' => 'Finding sponsoring employers, interviewing well, and landing ready to practise — from someone who has done it.',
+                'title' => 'Job Offer & Relocation',
+                'summary' => 'Finding sponsoring employers, interviewing well, and landing ready to practise, from someone who has done it.',
                 'body' => 'Finding employers who sponsor international PTs, presenting your experience well, and landing ready to practise from day one.',
                 'time' => '[X–Y months]',
                 'needs' => [
@@ -116,13 +116,13 @@ class SiteContent
                 'name' => 'Roadmap Session',
                 'teaser' => 'A 1:1 call to assess your profile and leave with a written, personalised step-by-step plan.',
                 'description' => 'A focused 1:1 call to assess your profile and leave with a clear, written plan.',
-                'price' => '$[—]',
+                'price' => '$[-]',
                 'featured' => false,
                 'highlights' => ['60-minute video call', 'Personal roadmap document', 'State shortlist'],
                 'features' => [
                     '60-minute video call',
                     'Profile & document assessment',
-                    'Personal step-by-step roadmap (PDF)',
+                    'Personal step-by-step roadmap',
                     'Recommended first state shortlist',
                     '7 days of WhatsApp follow-up',
                 ],
@@ -132,7 +132,7 @@ class SiteContent
                 'name' => 'Pathway Mentorship',
                 'teaser' => 'Guided support through FCCPT evaluation, TOEFL and NPTE preparation, with regular check-ins.',
                 'description' => 'Guided support through credential evaluation, TOEFL and the NPTE with regular check-ins.',
-                'price' => '$[—]',
+                'price' => '$[-]',
                 'featured' => true,
                 'highlights' => ['Everything in Roadmap', 'Document review & submissions', 'NPTE study plan & check-ins'],
                 'features' => [
@@ -141,7 +141,6 @@ class SiteContent
                     'TOEFL target & study plan',
                     'NPTE study strategy & resources',
                     '[2] check-in calls per month',
-                    'WhatsApp support for [X] months',
                 ],
             ],
             [
@@ -149,13 +148,12 @@ class SiteContent
                 'name' => 'Complete Journey',
                 'teaser' => 'End-to-end guidance from evaluation to licensure, visa process, job search and relocation.',
                 'description' => 'End-to-end guidance from evaluation to licence, visa process, job search and relocation.',
-                'price' => '$[—]',
+                'price' => '$[-]',
                 'featured' => false,
                 'highlights' => ['Everything in Mentorship', 'Licensure & visa guidance', 'CV, interviews & employers'],
                 'features' => [
                     'Everything in Pathway Mentorship',
-                    'State licensure guidance',
-                    'VisaScreen & visa route planning',
+                    'License and VisaScreen planning',
                     'US CV, interview prep & employer list',
                     'Relocation & first-90-days plan',
                     'Priority support until you land',
@@ -192,8 +190,8 @@ class SiteContent
         return [
             ['category' => 'General', 'question' => 'Who is this consultation for?', 'answer' => 'Pakistani DPT graduates (and final-year students) who want to build a physical therapy career in the United States and want honest, personal guidance on how to get there.'],
             ['category' => 'General', 'question' => 'Is my DPT from Pakistan accepted in the US?', 'answer' => 'Your degree must be evaluated against US standards by an approved agency such as FCCPT. Many Pakistani DPT graduates complete this successfully, sometimes after extra coursework. We look at your transcripts and tell you what to expect.'],
-            ['category' => 'General', 'question' => 'Can you guarantee a visa or a job?', 'answer' => 'No — and you should be careful of anyone who does. We guide you through every step and help you avoid costly mistakes, but exams, visas and job offers depend on you, employers and US authorities.'],
-            ['category' => 'Process', 'question' => 'How long does the whole process take?', 'answer' => '[Typical range] — it depends on credential evaluation, how quickly you pass TOEFL and the NPTE, your state and your visa route. Your roadmap gives you a personal timeline.'],
+            ['category' => 'General', 'question' => 'Can you guarantee a visa or a job?', 'answer' => 'No, and you should be careful of anyone who does. We guide you through every step and help you avoid costly mistakes, but exams, visas and job offers depend on you, employers and US authorities.'],
+            ['category' => 'Process', 'question' => 'How long does the whole process take?', 'answer' => '[Typical range], it depends on credential evaluation, how quickly you pass TOEFL and the NPTE, your state and your visa route. Your roadmap gives you a personal timeline.'],
             ['category' => 'Process', 'question' => 'What happens after I fill the eligibility form?', 'answer' => 'We review your answers. If you’re a fit, you receive an email with a detailed recorded video explaining the process and our services. There is no obligation to buy anything.'],
             ['category' => 'Payments', 'question' => 'How do I pay?', 'answer' => 'Choose a plan, enter your details, and transfer the amount to the bank account shown at checkout. Then upload a screenshot of your receipt. We verify it and confirm by email and WhatsApp.'],
             ['category' => 'Payments', 'question' => 'How long does payment verification take?', 'answer' => 'Usually within [24 hours] on working days. You’ll get a confirmation with your onboarding details once it’s verified.'],
@@ -213,7 +211,7 @@ class SiteContent
         $answers = array_column(static::faqs(), 'answer', 'question');
 
         return [
-            ['question' => 'How long does the whole process take?', 'answer' => '[Typical range with a short explanation — depends on credential evaluation, exam attempts and the visa route.]'],
+            ['question' => 'How long does the whole process take?', 'answer' => '[Typical range with a short explanation, depends on credential evaluation, exam attempts and the visa route.]'],
             ['question' => 'Is my DPT from Pakistan accepted in the US?', 'answer' => $answers['Is my DPT from Pakistan accepted in the US?']],
             ['question' => 'Can you guarantee a visa or a job?', 'answer' => $answers['Can you guarantee a visa or a job?']],
             ['question' => 'How do I pay, and when does my plan start?', 'answer' => $answers['How do I pay?']],

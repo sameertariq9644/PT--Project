@@ -23,7 +23,7 @@
                     </tr>
                     <tr>
                         <td style="padding:18px 8px 0; font-size:12px; line-height:1.6; color:#7A8B8E;">
-                            {{ config('site.name') }} · Educational guidance only — not legal or immigration advice.
+                            {{ config('site.name') }} · Educational guidance only, not legal or immigration advice.
                         </td>
                     </tr>
                 </table>

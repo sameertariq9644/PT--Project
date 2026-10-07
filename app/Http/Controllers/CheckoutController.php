@@ -80,6 +80,6 @@ class CheckoutController extends Controller
             return response()->json(['message' => 'A receipt has already been submitted for this order. Please contact us if you need to change it.'], 409);
         }
 
-        return response()->json(['message' => 'Thank you — we have received your receipt.'], 201);
+        return response()->json(['message' => 'Thank you, we have received your receipt.'], 201);
     }
 }

@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Admin — Affiliates')
+@section('title', 'Admin | Affiliates')
 
 @section('content')
     <main class="admin-main admin-main--compact" data-dashboard="admin" data-stats-url="{{ route('admin.affiliates.stats') }}" data-export-url="{{ route('admin.affiliates.export') }}">

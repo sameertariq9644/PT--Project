@@ -46,7 +46,7 @@ class SettingsTest extends TestCase
         $this->assertSame('Meezan Bank', Settings::get('payment.bank_name'));
         $this->assertSame('45', Settings::get('affiliates.attribution_days'));
 
-        $this->get('/services')->assertSee('+92 300 1112223');
+        $this->get('/contact')->assertSee('+92 300 1112223');
     }
 
     public function test_the_smtp_password_is_encrypted_at_rest_and_never_rendered(): void

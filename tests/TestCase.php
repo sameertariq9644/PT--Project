@@ -38,7 +38,6 @@ abstract class TestCase extends BaseTestCase
             'graduation_year' => '2025',
             'university' => 'Riphah International University',
             'clinical_experience' => 'Less than 1 year',
-            'toefl' => 'Preparing',
             'fccpt' => 'Not yet',
             '_elapsed' => 8000,
             ...$overrides,

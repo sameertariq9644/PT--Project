@@ -1,6 +1,6 @@
 @extends('layouts.site')
 
-@section('title', 'Home — DPT to USA Consultation')
+@section('title', 'Home | DPT to USA Consultation')
 
 @php
     $howSteps = [
@@ -23,7 +23,7 @@
                     <span>Guided by a US-licensed physical therapist</span>
                 </div>
                 <h1 class="hero__title">From a DPT in Pakistan to a <span class="hl">licensed PT</span> in the USA.</h1>
-                <p class="hero__lede">I made this move myself. Now I help Pakistani DPT graduates understand every step — credentialing, the NPTE, licensure and visas — with an honest plan built around your profile.</p>
+                <p class="hero__lede">I made this move myself. Now I help Pakistani DPT graduates understand every step (credentialing, the NPTE, licensure and visas) with an honest plan built around your profile.</p>
                 <div class="hero__cta">
                     <a href="#eligibility" class="btn btn--row btn--accent">Check my eligibility
                         <x-icon name="arrow-right" size="18" stroke="2.2" />
@@ -49,7 +49,7 @@
                     </svg>
                     <div class="hero__portrait-label">
                         <x-icon name="user" size="56" stroke="1.4" />
-                        <span>[Professional portrait — clinic setting]</span>
+                        <span>[Professional portrait, clinic setting]</span>
                     </div>
                 </div>
                 <div class="journey-card">
@@ -65,7 +65,7 @@
                 <div class="cred-chip">
                     <div class="cred-chip__icon"><x-icon name="shield" size="22" /></div>
                     <div class="cred-chip__text">
-                        <span class="cred-chip__title">PT, DPT · Licensed in [State]</span>
+                        <span class="cred-chip__title">PT, DPT · Licensed in [USA]</span>
                         <span class="cred-chip__sub">Trained in Pakistan, practising in the US</span>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
     <section class="trust">
         <div class="wrap trust__inner">
             <span class="trust__label">Guidance covers</span>
-            @foreach (['FCCPT credentialing', 'TOEFL planning', 'NPTE strategy', 'State licensure', 'VisaScreen & visas'] as $topic)
+            @foreach (['FCCPT credentialing', 'TOEFL planning', 'NPTE strategy', 'State licensure', 'VisaScreen'] as $topic)
                 <span class="trust__item">{{ $topic }}</span>
                 @unless ($loop->last)
                     <span class="trust__dot">•</span>
@@ -92,9 +92,9 @@
             <div class="watch__copy">
                 <span class="eyebrow">Start here</span>
                 <h2 class="h2">Watch this before you apply.</h2>
-                <p class="watch__lede">A short, honest introduction to what the path really looks like — and how I work with students.</p>
+                <p class="watch__lede">A short, honest introduction to what the path really looks like, and how I work with students.</p>
                 <div class="watch__points">
-                    @foreach (['Realistic timelines and total costs, start to finish', 'The mistakes that cost graduates months (or years)', 'Who this consultation is — and isn’t — right for'] as $point)
+                    @foreach (['Realistic timelines and total costs, start to finish', 'The mistakes that cost graduates months (or years)', 'Who this consultation is, and isn’t, right for'] as $point)
                         <div class="watch__point">
                             <x-icon name="check" size="22" stroke="2.2" class="icon-teal" />
                             <span>{{ $point }}</span>
@@ -124,7 +124,7 @@
             <div class="split-head">
                 <div class="pathway-teaser__head">
                     <span class="eyebrow">The pathway</span>
-                    <h2 class="h2">Six steps between you and a US licence — mapped clearly.</h2>
+                    <h2 class="h2">Six steps between you and a US licence, mapped clearly.</h2>
                 </div>
                 <p class="pathway-teaser__intro">Most graduates don’t fail for lack of talent. They get lost in the order, the paperwork and the deadlines. This is the route, in plain language.</p>
             </div>
@@ -182,7 +182,7 @@
                 <div class="fit-card fit-card--no">
                     <h3>It’s not for you if…</h3>
                     <div class="fit-card__list">
-                        @foreach (['You’re looking for a shortcut or a guaranteed visa — no honest adviser can promise one', 'You want someone else to do the studying and exams for you', 'You aren’t yet sure the US is where you want to build your life'] as $item)
+                        @foreach (['You’re looking for a shortcut or a guaranteed visa, no honest adviser can promise one', 'You want someone else to do the studying and exams for you', 'You aren’t yet sure the US is where you want to build your life'] as $item)
                             <div class="fit-card__item"><x-icon name="x" size="22" stroke="2.2" class="icon-rust" /><span>{{ $item }}</span></div>
                         @endforeach
                     </div>
@@ -230,7 +230,7 @@
             <div class="about-teaser__photo">
                 <div class="about-teaser__photo-label">
                     <x-icon name="image" size="48" stroke="1.4" />
-                    <span>[Candid photo — at work in the US]</span>
+                    <span>[Candid photo, at work in the US]</span>
                 </div>
                 <div class="about-teaser__tag">
                     <span class="about-teaser__tag-title">[University], Pakistan</span>
@@ -264,7 +264,7 @@
                 @foreach ($stories as $outcome)
                     <div class="story">
                         <span class="pill">{{ $outcome }}</span>
-                        <p class="story__quote">“[Real student quote about the experience — added once permission is given.]”</p>
+                        <p class="story__quote">“[Real student quote about the experience, added once permission is given.]”</p>
                         <div class="story__by">
                             <div class="story__avatar"></div>
                             <div class="story__who">
@@ -285,7 +285,7 @@
                 <div class="eligibility__aside">
                     <span class="eyebrow eyebrow--accent">Free eligibility check</span>
                     <h2>See if the US path is right for you.</h2>
-                    <p>Tell us a little about yourself. If you’re a fit, you’ll receive a detailed video walkthrough in your inbox — free, with no obligation.</p>
+                    <p>Tell us a little about yourself. If you’re a fit, you’ll receive a detailed video walkthrough in your inbox, free, with no obligation.</p>
                     <div class="eligibility__notes">
                         <div class="eligibility__note"><x-icon name="clock" size="18" class="icon-mint" />Takes about 3 minutes</div>
                         <div class="eligibility__note"><x-icon name="lock" size="18" class="icon-mint" />Your details stay private</div>
@@ -303,7 +303,7 @@
             <div class="section-head">
                 <span class="eyebrow">FAQ</span>
                 <h2 class="h2">Questions students ask first.</h2>
-                <p class="faq-teaser__lede">Still unsure? Message us on <a href="{{ route('contact') }}">WhatsApp</a> — we reply within a day.</p>
+                <p class="faq-teaser__lede">Still unsure? Message us on <a href="{{ route('contact') }}">WhatsApp</a>, we reply within a day.</p>
             </div>
             <div class="faq-list faq-list--home" data-faq>
                 @foreach ($faqs as $faq)

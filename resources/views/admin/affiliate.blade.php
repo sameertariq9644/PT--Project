@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Admin — '.$affiliate->user->name)
+@section('title', 'Admin | '.$affiliate->user->name)
 
 @section('content')
     <main class="admin-main">
@@ -28,7 +28,7 @@
         </div>
 
         <div class="panel">
-            <div class="panel__title"><h2>Referral link</h2><span>Any page works — add <code>?ref={{ $affiliate->code }}</code> to its address.</span></div>
+            <div class="panel__title"><h2>Referral link</h2><span>Any page works, add <code>?ref={{ $affiliate->code }}</code> to its address.</span></div>
             <div class="link-output"><div class="link-output__url link-output__url--bordered">{{ $link }}</div></div>
             @if ($affiliate->payout_details)
                 <div class="panel__title"><h2>Payout details</h2></div>

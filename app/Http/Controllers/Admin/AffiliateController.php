@@ -120,7 +120,7 @@ class AffiliateController extends Controller
 
         return back()->with('status', $payout->wasRecentlyCreated
             ? $period.' marked as paid.'
-            : $period.' was already marked as paid — nothing changed.');
+            : $period.' was already marked as paid, nothing changed.');
     }
 
     /**

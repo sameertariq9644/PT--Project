@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'Log in — '.config('site.name'))
+@section('title', 'Log in | '.config('site.name'))
 
 @section('body')
     <div class="page login">

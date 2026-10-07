@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Admin — Services')
+@section('title', 'Admin | Services')
 
 @section('content')
     <main class="admin-main">
@@ -29,7 +29,7 @@
                     @if ($plan->is_featured)
                         <span class="status status--amber">Most chosen</span>
                     @else
-                        <span class="dash">—</span>
+                        <span class="dash">-</span>
                     @endif
                     <span class="status status--{{ $plan->is_active ? 'green' : 'grey' }}">{{ $plan->is_active ? 'Active' : 'Hidden' }}</span>
                     <a href="{{ route('admin.services.edit', $plan) }}" class="aff-view">Edit</a>
@@ -37,6 +37,6 @@
             @endforeach
         </div>
 
-        <p class="fineprint">A plan without a price shows as “$[—]” and cannot be bought online. The comparison table on the Services page is edited in code for now.</p>
+        <p class="fineprint">A plan without a price shows as “$[-]” and cannot be bought online. The comparison table on the Services page is edited in code for now.</p>
     </main>
 @endsection

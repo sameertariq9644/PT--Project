@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', $affiliate ? 'Admin — Edit affiliate' : 'Admin — Add affiliate')
+@section('title', $affiliate ? 'Admin | Edit affiliate' : 'Admin | Add affiliate')
 
 @section('content')
     <main class="admin-main">
@@ -49,7 +49,7 @@
                     <label class="check check--box">
                         <input type="hidden" name="is_active" value="0">
                         <input type="checkbox" name="is_active" value="1" @checked(old('is_active', $affiliate?->is_active ?? true))>
-                        Active — can log in and earns on new referrals
+                        Active, can log in and earns on new referrals
                     </label>
                 </div>
             </div>

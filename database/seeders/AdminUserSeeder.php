@@ -18,7 +18,7 @@ class AdminUserSeeder extends Seeder
         $password = config('site.admin.password');
 
         if (blank($email) || blank($password)) {
-            $this->command?->warn('ADMIN_EMAIL / ADMIN_PASSWORD are not set — no admin created. Run: php artisan app:create-admin you@example.com');
+            $this->command?->warn('ADMIN_EMAIL / ADMIN_PASSWORD are not set, no admin created. Run: php artisan app:create-admin you@example.com');
 
             return;
         }

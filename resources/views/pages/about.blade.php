@@ -1,6 +1,6 @@
 @extends('layouts.site')
 
-@section('title', 'About — Dr. [Name]')
+@section('title', 'About | Dr. [Name]')
 
 @php
     $timeline = [
@@ -8,12 +8,12 @@
         ['year' => '[Year]', 'title' => 'Credential evaluation', 'text' => '[What the evaluation process was like and what he learnt.]'],
         ['year' => '[Year]', 'title' => 'Passed the NPTE', 'text' => '[How he prepared, and what made the difference.]'],
         ['year' => '[Year]', 'title' => 'Licensed & first US job', 'text' => '[State, setting, and the move itself.]'],
-        ['year' => 'Today', 'title' => 'Practising & mentoring', 'text' => '[Current role — and guiding Pakistani graduates through the same path.]'],
+        ['year' => 'Today', 'title' => 'Practising & mentoring', 'text' => '[Current role, and guiding Pakistani graduates through the same path.]'],
     ];
     $promises = [
-        ['icon' => 'shield', 'title' => 'Honesty over hype', 'text' => 'If the US isn’t right for you yet, I’ll tell you — before you pay for anything.'],
+        ['icon' => 'shield', 'title' => 'Honesty over hype', 'text' => 'If the US isn’t right for you yet, I’ll tell you, before you pay for anything.'],
         ['icon' => 'user', 'title' => 'Built around you', 'text' => 'No copy-paste plans. Your degree, your scores and your budget shape your roadmap.'],
-        ['icon' => 'route', 'title' => 'Been there myself', 'text' => 'Advice from someone who actually walked the path — not from a forum or an agent.'],
+        ['icon' => 'route', 'title' => 'Been there myself', 'text' => 'Advice from someone who actually walked the path, not from a forum or an agent.'],
     ];
     $credentials = [
         'Degree' => 'DPT, [University]',
@@ -28,7 +28,7 @@
         <div class="wrap about-hero__inner">
             <div class="about-hero__copy">
                 <span class="eyebrow">About Dr. [Name]</span>
-                <h1 class="about-hero__title">A Pakistani DPT who made it — and <span class="hl">came back</span> to guide you.</h1>
+                <h1 class="about-hero__title">A Pakistani DPT who made it, and <span class="hl">came back</span> to guide you.</h1>
                 <p class="about-hero__lede">[One-paragraph intro: who he is, where he practises today, and why he started helping graduates from home.]</p>
                 <div class="about-hero__tags">
                     @foreach (['PT, DPT', 'Licensed in [State]', '[Specialty]', 'Speaks English & Urdu'] as $tag)
@@ -46,8 +46,8 @@
     <section class="band--dark">
         <div class="quote__inner">
             <x-icon name="quote" size="44" class="quote__mark" />
-            <p class="quote__text">[A personal line from the doctor — e.g. what he wishes someone had told him when he graduated.]</p>
-            <span class="quote__by">— Dr. [Full Name], PT, DPT</span>
+            <p class="quote__text">[A personal line from the doctor, e.g. what he wishes someone had told him when he graduated.]</p>
+            <span class="quote__by">Dr. [Full Name], PT, DPT</span>
         </div>
     </section>
 
@@ -56,7 +56,7 @@
             <div class="section-head">
                 <span class="eyebrow">My journey</span>
                 <h2 class="h2">The same road you’re about to walk.</h2>
-                <p class="journey__lede">Every step below is one I went through myself — which is why I can tell you what really happens at each one.</p>
+                <p class="journey__lede">Every step below is one I went through myself, which is why I can tell you what really happens at each one.</p>
             </div>
             <div class="timeline">
                 @foreach ($timeline as $event)

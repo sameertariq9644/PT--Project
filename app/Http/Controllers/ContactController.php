@@ -24,6 +24,6 @@ class ContactController extends Controller
             }
         }
 
-        return response()->json(['message' => 'Thank you — your message has been sent.'], 201);
+        return response()->json(['message' => 'Thank you, your message has been sent.'], 201);
     }
 }

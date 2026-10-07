@@ -297,7 +297,7 @@ class AffiliateStats
                     'plan' => $order->plan_name,
                     'status' => $status,
                     'tone' => $tone,
-                    'earn' => $earns === null ? '—' : Money::usd($earns),
+                    'earn' => $earns === null ? '-' : Money::usd($earns),
                 ];
             })
             ->all();
@@ -340,7 +340,7 @@ class AffiliateStats
         $words = array_values(array_filter(explode(' ', trim($name))));
 
         if ($words === []) {
-            return '—';
+            return '-';
         }
 
         $first = $words[0];
